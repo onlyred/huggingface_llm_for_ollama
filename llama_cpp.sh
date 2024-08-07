@@ -20,3 +20,4 @@ python download.py
 python llama.cpp/convert_hf_to_gguf.py ${MODEL_DOWNLOAD_PATH} \
 	                               --outfile ${OUTFILE} \
                                        --outtype ${OUTTYPE}
+llama.cpp/examples/quantize ${OUTFILE} ${QUANTIZED_FILE} ${QTYPE}
